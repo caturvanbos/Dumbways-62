@@ -1,0 +1,395 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(212, 212, 212);
+    min-height: 100vh;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+header {
+    height: 70px;
+    width: 100%;
+    background: whitesmoke;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-header {
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+    align-items: center;
+    display: flex;
+    gap: 20px;
+}
+
+ul li a {
+    text-transform: capitalize;
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.logo {
+    padding-right: 60px;
+    margin-left: 30px;
+    font-weight: 700;
+    font-size: 28px;
+    color: rgb(255, 72, 0);
+}
+
+header button {
+    text-transform: capitalize;
+    position: absolute;
+    right: 80px;
+    padding: 8px 20px;
+    background: black;
+    color: whitesmoke;
+    font-size: 14px;
+    border-radius: 10px;
+    font-weight: 550;
+    cursor: pointer;
+}
+
+.container-title h1 {
+    color: black;
+    text-align: center;
+    padding-top: 40px;
+    text-transform: capitalize;
+}
+
+form {
+    margin: 30px auto;
+    max-width: 600px;
+    padding: 10px;
+    padding-bottom: 100px;
+}
+
+.form-grup {
+    margin-bottom: 20px;
+}
+
+.form-grup label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.form-grup input {
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 10px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+.date-grup {
+    display: flex;
+    gap: 20px;
+}
+
+.date-grup .form-grup {
+    width: 50%;
+}
+
+textarea {
+    width: 100%;
+    outline: none;
+    font-size: 18px;
+    font-weight: 300;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.form-tech .technologies {
+    padding-bottom: 20px;
+    font-weight: 650;
+    text-transform: capitalize;
+    font-size: 17px;
+}
+
+.tech-grup {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+
+.tech-option {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: darkslategrey;
+    font-weight: 600;
+    gap: 10px;
+}
+
+.form-tech .tech-option input {
+    appearance: none;     /* Hapus default tampilan bawaan */
+    width: 20px;
+    height: 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #fff;
+    cursor: pointer;
+    box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.form-tech .tech-option input:checked {
+    background-color: #333;
+    position: relative;
+}
+
+.form-tech .tech-option input:checked::after {
+    content: "✔";
+    position: absolute;
+    top: -2px;
+    left: 4px;
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+}
+
+
+.container-image {
+    margin-top: 40px;
+    position: relative;
+}
+.container-image .upload-image {
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.file-upload {
+    position: relative;
+    display: flex;
+    width: 100%;
+    background: whitesmoke;
+    
+    border-radius: 8px;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.2);
+}
+
+.file-upload .choose {
+    padding: 12px 20px;
+    background-color: #e9ecef;         /* Warna tombol */
+    border-right: 1px solid #D1D5DB;
+    cursor: pointer;
+    font-size: 14px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    color: #495057;
+}
+
+.file-upload input[type="file"] {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+
+.file-upload span {
+    position: absolute;
+    right: 20px;
+    font-size: 23px;
+}
+
+.btn-submit button {
+    padding: 8px 20px;
+    border-radius: 5px;
+    background: black;
+    color: whitesmoke;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 30px;
+    position: absolute;
+    cursor: pointer;
+    right: 15px;
+    border: none;
+}
+
+.btn-submit button:hover {
+    background: #2c2c2c;
+    color: whitesmoke;
+}
+
+.header-project {
+    background: whitesmoke;
+    padding: 20px;
+}
+
+.header-project h1 {
+    text-transform: uppercase;
+    padding: 20px 0;
+}
+
+.header-project .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 28px;
+}
+
+.header-project h1 {
+    text-align: center;
+}
+
+.header-project .container-header-project {
+    
+    padding: 10px;
+    margin-top: 30px;
+    min-height: 100%;
+    width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.2);
+    background: whitesmoke
+}
+
+.header-project .img {
+    max-width: 600px;
+}
+
+.header-project .img img {
+    width:100%;
+    height: auto;
+}
+
+.dumbways {
+    padding: 8px 0 5px;
+}
+
+.dumbways h4 {
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+.dumbways p {
+    text-transform: capitalize;
+    font-size: 15px;
+}
+
+
+.header-project p {
+    font-size: 14px;
+    padding: 10px 60px 15px 0;
+}
+
+.header-project .icons {
+    display: flex;
+    gap: 18px;
+    padding: 8px 0 28px;
+}
+
+
+.header-project .icons i {
+    font-size: 24px;
+}
+
+.header-project .container-header-project .submit-2 {
+    display: flex;
+    gap: 20px;
+}
+
+.header-project .container-header-project .submit-2 button {
+    width: 50%;
+    border: none;
+    padding: 5px;
+    border-radius: 12px;
+    background: #1b1b1b;
+    color: #e9ecef;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.container-web-app {
+    background: rgb(226, 226, 226);
+    padding: 20px;
+}
+
+.container-web-app h1 {
+    text-transform: capitalize;
+}
+
+.container-web-app .img-web {
+    max-width: 700px;
+}
+
+.container-web-app .img-web img {
+    width: 95%;
+    height: auto;
+}
+
+.container-web-app h1 {
+    text-align: center;
+    padding: 10px 0 50px;
+}
+
+.container-web-app .wrapper-web {
+    display: flex;
+    gap: 40px;
+}
+
+.wrapper-web h4 {
+    text-transform: capitalize;
+    padding-bottom: 10px;
+}
+
+.icon-teks {
+    display: flex;
+    align-items: center;
+    
+}
+
+
+.duration .icon-teks i,.duration .icon-teks span {
+    font-size: 24px;
+    margin: 5px;
+}
+
+.technologies-web {
+    margin-top: 80px;
+}
+
+
+.tech-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.tech-item {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #333;
+    gap: 20px;
+}
+
+.tech-row .tech-item i,span {
+    font-size: 24px;
+}
+
+.container-teks {
+    padding-top: 50px;
+}
+
+.container-teks p {
+    padding: 0 180px 0 0;
+}
